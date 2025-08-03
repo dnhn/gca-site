@@ -8,6 +8,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Git Commit Audio',
+			description: 'Add a spark of joy to coding—hear a surprise sound every time you commit.',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dnhn/gca' }],
 			sidebar: [
 				{ slug: 'docs' },
