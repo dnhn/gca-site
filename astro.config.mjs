@@ -7,14 +7,13 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
 	integrations: [
 		starlight({
+			credits: true,
 			title: 'Git Commit Audio',
+			titleDelimiter: '—',
 			description: 'Add a spark of joy to coding—hear a surprise sound every time you commit.',
 			favicon: 'favicon.png',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dnhn/gca' }],
-			sidebar: [
-				{ slug: 'docs' },
-				{ slug: 'docs/thanks' },
-			],
+			sidebar: ['getting-started', 'thanks'],
 			customCss: ['./src/styles/global.css'],
 		}),
 	],
