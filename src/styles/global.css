@@ -1,14 +1,12 @@
 @layer base, starlight, theme, components, utilities;
 
 @import '@fontsource-variable/nunito';
-@import '@fontsource-variable/fira-code';
 @import '@astrojs/starlight-tailwind';
 @import 'tailwindcss/theme.css' layer(theme);
 @import 'tailwindcss/utilities.css' layer(utilities);
 
 @theme {
 	--font-sans: 'Nunito Variable';
-	--font-mono: 'Fira Code Variable';
 
 	--color-accent-200: #bfc3fb;
 	--color-accent-600: #4c2ad2;
