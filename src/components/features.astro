@@ -1,0 +1,21 @@
+---
+import { Card, CardGrid } from '@astrojs/starlight/components';
+---
+
+<section class="py-16">
+  <h2>Features</h2>
+  <CardGrid stagger>
+    <Card title="Cross-platform" icon="pencil">
+      Works on macOS and Linux, using the system’s default audio player.
+    </Card>
+    <Card title="Quick setup" icon="add-document">
+      Install with a single command.
+    </Card>
+    <Card title="Simple configuration" icon="setting">
+      Centralised configuration with easily customisable audio.
+    </Card>
+    <Card title="Get started" icon="open-book">
+      Read the <a href="/intro">introduction</a>.
+    </Card>
+  </CardGrid>
+</section>
