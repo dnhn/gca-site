@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-Add a spark of joy to coding—hear a surprise sound every time you commit. By default, it’s a sitcom laugh track.
+**Git Commit Audio** adds a spark of joy to coding—hear a surprise sound every time you commit. By default, it’s a sitcom laugh track.
 
 ## Features
 
