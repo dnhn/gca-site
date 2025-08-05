@@ -10,17 +10,19 @@ export default defineConfig({
   integrations: [
     starlight({
       credits: true,
-      title: 'Git Commit Audio',
-      titleDelimiter: '—',
+      customCss: ['./src/styles/global.css'],
       description: 'Add a spark of joy to coding—hear a surprise sound every time you commit.',
+      editLink: { baseUrl: 'https://github.com/dnhn/gca-site/edit/root' },
       head: [{ tag: 'meta', attrs: { name: 'og:image', content: ogImage } }],
+      lastUpdated: true,
       logo: {
         dark: './src/assets/logo-invert.svg',
         light: './src/assets/logo.svg',
       },
-      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dnhn/gca' }],
       sidebar: ['intro', 'install', 'config', 'thanks'],
-      customCss: ['./src/styles/global.css'],
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dnhn/gca' }],
+      title: 'Git Commit Audio',
+      titleDelimiter: '—',
     }),
   ],
   vite: {
