@@ -1,6 +1,8 @@
 ---
 import { Code, LinkButton } from '@astrojs/starlight/components';
 
+import Button from '~/components/button.astro'
+
 const baseTerminal = `$ git status
 On branch main
 Changes to be committed:
@@ -17,14 +19,14 @@ $ git commit -m "Add README.md"
  create mode 100644 README.md`;
 ---
 
-<section class="gap-8 grid-cols-2 lg:grid">
+<section class="gap-8 grid-cols-2 py-16 lg:grid">
   <div class="py-8">
     <h2>Try it out!</h2>
     <div class="flex">
-      <LinkButton href="" variant="secondary" icon="seti:audio" iconPlacement="start" class="switch-btn">
+      <Button variant="secondary" icon="seti:audio" iconPlacement="start" class="switch-btn">
         <span>audio.wav</span>
-      </LinkButton>
-      <LinkButton href="" variant="primary" icon="approve-check" class='commit-btn'>Commit!</LinkButton>
+      </Button>
+      <Button variant="primary" icon="approve-check" class="commit-btn">Commit!</Button>
     </div>
   </div>
   <div class="mt-0">
