@@ -1,0 +1,85 @@
+---
+import { Code, LinkButton } from '@astrojs/starlight/components';
+
+const baseTerminal = `$ git status
+On branch main
+Changes to be committed:
+  (use \"git restore --staged <file>...\" to unstage)
+        new file:   README.md
+`;
+
+const initTerminal = `${baseTerminal}\n$ _`;
+
+const commitTerminal = `${baseTerminal}
+$ git commit -m "Add README.md"
+[root b2c5d11] Add README.md
+ 1 file changed, 53 insertions(+)
+ create mode 100644 README.md`;
+---
+
+<section class="gap-8 grid-cols-2 lg:grid">
+  <div class="py-8">
+    <h2>Try it out!</h2>
+    <div class="flex">
+      <LinkButton href="" variant="secondary" icon="seti:audio" iconPlacement="start" class="switch-btn">
+        <span>Default audio</span>
+      </LinkButton>
+      <LinkButton href="" variant="primary" icon="approve-check" class='commit-btn'>Commit!</LinkButton>
+    </div>
+  </div>
+  <div class="mt-0">
+    <Code code={initTerminal} lang="shellscript" class="init-terminal" />
+    <Code code={commitTerminal} lang="shellscript" class="commit-terminal mt-0 hidden" />
+  </div>
+</section>
+
+<script>
+let audioId = 0;
+const laugh = new Audio('/audio/audio.wav');
+const tada = new Audio('/audio/tada.mp3');
+
+document.querySelector('.commit-btn')!.addEventListener('click', commit);
+document.querySelector('.switch-btn')!.addEventListener('click', custom);
+
+const initTerminal = document.querySelector('.init-terminal')!;
+const commitTerminal = document.querySelector('.commit-terminal')!;
+
+function playAudio(id: number = 0) {
+  switch (id) {
+    case 0:
+      laugh.currentTime = 0;
+      laugh.play();
+      break;
+    case 1:
+      tada.currentTime = 0;
+      tada.play();
+      break;
+    default:
+      laugh.currentTime = 0;
+      laugh.play()
+  }
+}
+
+function commit(event: Event) {
+  event.preventDefault();
+
+  commitTerminal.classList.add('hidden');
+  initTerminal.classList.remove('hidden');
+
+  setTimeout(() => {
+    initTerminal.classList.add('hidden');
+    commitTerminal.classList.remove('hidden');
+    playAudio(audioId);
+  }, 300)
+}
+
+function custom(event: Event) {
+  event.preventDefault();
+
+  commitTerminal.classList.add('hidden')
+  initTerminal.classList.remove('hidden');
+
+  audioId = (audioId + 1) % 2;
+  document.querySelector('.switch-btn span')!.textContent = `${audioId === 0 ? 'Default' : 'Custom'} audio`;
+}
+</script>
