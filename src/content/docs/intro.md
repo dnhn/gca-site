@@ -4,8 +4,6 @@ title: Introduction
 
 Add a spark of joy to coding—hear a surprise sound every time you commit. By default, it’s a sitcom laugh track.
 
-This project is an entry to the [For the Love of Code 2025](https://gh.io/ftloc) hackathon.
-
 ## Features
 
 - Cross-platform
