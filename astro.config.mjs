@@ -9,6 +9,9 @@ const ogImage = new URL('og.png', 'https://gca.nhan.dev').href
 export default defineConfig({
   integrations: [
     starlight({
+      components: {
+        Footer: './src/components/footer.astro',
+      },
       credits: true,
       customCss: ['./src/styles/global.css'],
       description: 'Add a spark of joy to coding—hear a surprise sound every time you commit.',
