@@ -16,7 +16,7 @@ export default defineConfig({
 				light: './src/assets/logo.svg',
 			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dnhn/gca' }],
-			sidebar: ['getting-started', 'thanks'],
+			sidebar: ['intro', 'thanks'],
 			customCss: ['./src/styles/global.css'],
 		}),
 	],

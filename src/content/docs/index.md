@@ -13,7 +13,7 @@ hero:
     alt: Illustration of a bell
   actions:
     - text: Get started
-      link: /getting-started
+      link: /intro
       icon: right-arrow
     - text: View on GitHub
       icon: external
