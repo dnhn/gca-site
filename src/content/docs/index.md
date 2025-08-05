@@ -4,6 +4,10 @@ head:
   - tag: title
     content: Git Commit Audio
 template: splash
+banner:
+  content: This project is an entry to GitHub’s
+    <a href="https://gh.io/ftloc" target="_blank">For the Love of Code 2025</a>
+    hackathon.
 hero:
   title: Code. Commit. <div class="inline whitespace-nowrap">
     Hear the <span class="font-black">Magic</span></div>.
@@ -20,12 +24,3 @@ hero:
       variant: minimal
       link: https://github.com/dnhn/gca
 ---
-import { LinkCard } from '@astrojs/starlight/components';
-
-<div class="mx-auto lg:max-w-1/2">
-  <LinkCard
-    title="For the Love of Code 2025"
-    href="https://gh.io/ftloc"
-    description="This project is an entry to GitHub’s hackathon."
-  />
-</div>
