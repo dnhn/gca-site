@@ -4,6 +4,8 @@ head:
   - tag: title
     content: Git Commit Audio
 template: splash
+editUrl: false
+lastUpdated: false
 banner:
   content: This project is an entry to GitHub’s
     <a href="https://gh.io/ftloc" target="_blank">For the Love of Code 2025</a>
