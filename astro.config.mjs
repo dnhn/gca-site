@@ -11,7 +11,10 @@ export default defineConfig({
 			title: 'Git Commit Audio',
 			titleDelimiter: '—',
 			description: 'Add a spark of joy to coding—hear a surprise sound every time you commit.',
-			favicon: 'favicon.png',
+			logo: {
+				dark: './src/assets/logo-invert.svg',
+				light: './src/assets/logo.svg',
+			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dnhn/gca' }],
 			sidebar: ['getting-started', 'thanks'],
 			customCss: ['./src/styles/global.css'],
