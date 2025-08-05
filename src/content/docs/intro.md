@@ -12,7 +12,7 @@ This project is an entry to the [For the Love of Code 2025](https://gh.io/ftloc)
   - macOS (`afplay`)
   - Linux (`aplay` or `paplay`)
 - Quick setup with [a single command](/install)!
-- Centralised configuration with easily [customisable audio](/configuration/#custom-audio)
+- Centralised configuration with easily [customisable audio](/config/#custom-audio)
 
 ## How this works
 
