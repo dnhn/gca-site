@@ -22,14 +22,14 @@ $ git commit -m "Add README.md"
     <h2>Try it out!</h2>
     <div class="flex">
       <LinkButton href="" variant="secondary" icon="seti:audio" iconPlacement="start" class="switch-btn">
-        <span>Default audio</span>
+        <span>audio.wav</span>
       </LinkButton>
       <LinkButton href="" variant="primary" icon="approve-check" class='commit-btn'>Commit!</LinkButton>
     </div>
   </div>
   <div class="mt-0">
-    <Code code={initTerminal} lang="shellscript" class="init-terminal" />
-    <Code code={commitTerminal} lang="shellscript" class="commit-terminal mt-0 hidden" />
+    <Code code={initTerminal} lang="shellsession" class="init-terminal" />
+    <Code code={commitTerminal} lang="shellsession" class="commit-terminal mt-0 hidden" />
   </div>
 </section>
 
@@ -80,6 +80,6 @@ function custom(event: Event) {
   initTerminal.classList.remove('hidden');
 
   audioId = (audioId + 1) % 2;
-  document.querySelector('.switch-btn span')!.textContent = `${audioId === 0 ? 'Default' : 'Custom'} audio`;
+  document.querySelector('.switch-btn span')!.textContent = `${audioId === 0 ? 'audio.wav' : 'tada.mp3'}`;
 }
 </script>
