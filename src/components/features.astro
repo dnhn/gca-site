@@ -2,10 +2,13 @@
 import { Card, CardGrid } from '@astrojs/starlight/components';
 ---
 
-<section class="py-16">
-  <h2>Features</h2>
-  <CardGrid stagger>
-    <Card title="Cross-platform" icon="pencil">
+<section class="py-8 lg:py-16">
+  <h2 class="py-4 text-center">
+    What’s so great about
+    <span class="font-black whitespace-nowrap">Git Commit Audio</span>?
+  </h2>
+  <CardGrid stagger class="mt-8">
+    <Card title="Cross-platform" icon="seti:audio">
       Works on macOS and Linux, using the system’s default audio player.
     </Card>
     <Card title="Quick setup" icon="add-document">
@@ -14,7 +17,7 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
     <Card title="Simple configuration" icon="setting">
       Centralised configuration with easily customisable audio.
     </Card>
-    <Card title="Get started" icon="open-book">
+    <Card title="Let’s get started!" icon="open-book">
       Read the <a href="/intro">introduction</a>.
     </Card>
   </CardGrid>
