@@ -22,7 +22,18 @@ export default defineConfig({
         dark: './src/assets/logo-invert.svg',
         light: './src/assets/logo.svg',
       },
-      sidebar: ['intro', 'install', 'config', 'thanks'],
+      sidebar: [
+        'intro',
+        {
+          label: 'Installation',
+          items: [
+            { label: 'Get started', slug: 'install' },
+            'make',
+          ],
+        },
+        'config',
+        'thanks'
+      ],
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dnhn/gca' }],
       title: 'Git Commit Audio',
       titleDelimiter: '—',
