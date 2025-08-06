@@ -6,19 +6,25 @@
 @import 'tailwindcss/utilities.css' layer(utilities);
 
 @theme {
-	--font-sans: 'Nunito Variable';
+  --font-sans: 'Nunito Variable';
 
-	--color-accent-200: #bfc3fb;
-	--color-accent-600: #4c2ad2;
-	--color-accent-900: #2b256b;
-	--color-accent-950: #1e1d48;
+  --color-accent-200: #bfc3fb;
+  --color-accent-600: #4c2ad2;
+  --color-accent-900: #2b256b;
+  --color-accent-950: #1e1d48;
 
-	--color-gray-100: #f6f6f6;
-	--color-gray-200: #eeeeed;
-	--color-gray-300: #c2c2c2;
-	--color-gray-400: #8b8b8b;
-	--color-gray-500: #585858;
-	--color-gray-700: #383838;
-	--color-gray-800: #272726;
-	--color-gray-900: #181818;
+  --color-gray-100: #f6f6f6;
+  --color-gray-200: #eeeeed;
+  --color-gray-300: #c2c2c2;
+  --color-gray-400: #8b8b8b;
+  --color-gray-500: #585858;
+  --color-gray-700: #383838;
+  --color-gray-800: #272726;
+  --color-gray-900: #181818;
+}
+
+@layer base {
+  * {
+    @apply focus-visible:outline-2;
+  }
 }
