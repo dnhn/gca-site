@@ -5,7 +5,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 const ogImage = new URL('og.png', 'https://gca.nhan.dev').href
 
-// https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
