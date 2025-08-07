@@ -20,6 +20,7 @@ export default defineConfig({
       logo: {
         dark: './src/assets/logo-invert.svg',
         light: './src/assets/logo.svg',
+        replacesTitle: true,
       },
       sidebar: [
         'intro',
