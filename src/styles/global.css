@@ -28,3 +28,9 @@
     @apply focus-visible:outline-2;
   }
 }
+
+header {
+  [data-has-hero] & {
+    @apply border-b-0 bg-transparent backdrop-blur-lg;
+  }
+}
