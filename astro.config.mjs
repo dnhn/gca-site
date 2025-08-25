@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import tailwindcss from '@tailwindcss/vite';
 
-const ogImage = new URL('og.png', 'https://gca.nhan.dev').href
+const ogImage = new URL('og.png', 'https://git-audio.nhan.dev').href
 
 export default defineConfig({
   integrations: [
@@ -34,8 +34,8 @@ export default defineConfig({
         'config',
         'thanks'
       ],
-      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dnhn/gca' }],
-      title: 'Git Commit Audio',
+      social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dnhn/git-audio' }],
+      title: 'Git Audio',
       titleDelimiter: '—',
     }),
   ],

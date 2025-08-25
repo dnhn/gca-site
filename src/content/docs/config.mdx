@@ -3,7 +3,7 @@ title: Configuration
 ---
 import { Code, FileTree } from '@astrojs/starlight/components';
 
-Configuration is stored in `$HOME/.git-commit-audio/`:
+Configuration is stored in `$HOME/.git-audio/`:
 
 <FileTree>
 - audio.wav
@@ -19,7 +19,7 @@ By default, `audio.wav` is played.
 To change the audio, update the absolute path in `config.sh`:
 
 <Code
-  code={`export GIT_COMMIT_AUDIO="/path/to/your/audio"`}
+  code={`export GIT_AUDIO="/path/to/your/audio"`}
   lang="shellscript"
-  title="~/.git-commit-audio/config.sh"
+  title="~/.git-audio/config.sh"
 />

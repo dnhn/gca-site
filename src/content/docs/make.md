@@ -2,11 +2,11 @@
 title: Make commands
 ---
 
-Commands to manage **Git Commit Audio** global hook.
+Commands to manage **Git Audio** global hook.
 
 ```shell
 $ cd gca && make
-Git Commit Audio
+Git Audio
 
 COMMANDS
   init          Global configuration
