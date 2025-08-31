@@ -24,15 +24,9 @@ export default defineConfig({
       },
       sidebar: [
         'intro',
-        {
-          label: 'Installation',
-          items: [
-            { label: 'Get started', slug: 'install' },
-            'make',
-          ],
-        },
-        'config',
-        'thanks'
+        'install',
+        'cli',
+        'thanks',
       ],
       social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dnhn/git-audio' }],
       title: 'Git Audio',
