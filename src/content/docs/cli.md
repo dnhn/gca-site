@@ -2,8 +2,6 @@
 title: git-audio CLI
 ---
 
-**Git Audio** command index.
-
 ```shell
 $ git-audio
 
