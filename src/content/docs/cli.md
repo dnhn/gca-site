@@ -56,4 +56,4 @@ git-audio audio:reset
 git-audio audio:set /path/to/audio
 ```
 
-Set custom audio file. Must be an absolute path.
+Sets a custom audio file. The path must be absolute.
