@@ -1,6 +1,7 @@
 ---
 title: Installation
 ---
+import { FileTree } from '@astrojs/starlight/components';
 
 Clone the Git Audio project and run the installation script:
 
@@ -11,6 +12,19 @@ make install
 
 This sets up the configuration directory in your home folder and installs the `git-audio` CLI to `/usr/local/bin`.
 You can now run `git-audio` from anywhere in your terminal.
+
+## Configuration
+
+Configuration is stored in `$HOME/.git-audio/`:
+
+<FileTree>
+- audio.wav
+- cli.sh
+- config.sh
+- templates
+  - hooks
+    - post-commit
+</FileTree>
 
 ## Uninstallation
 
