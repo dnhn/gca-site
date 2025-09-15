@@ -33,6 +33,7 @@ export default defineConfig({
       titleDelimiter: '—',
     }),
   ],
+  site: 'https://git-audio.nhan.dev',
   vite: {
     plugins: [tailwindcss()],
   },
