@@ -2,7 +2,12 @@
 title: git-audio CLI
 ---
 
+The `git-audio` command line interface allows you to manage **Git Audio** settings both globally and on a per-repository basis.
+Run `git-audio` in your terminal to see the available commands.
+
 ## Global initialisation
+
+System-wide enable or disable initialisation of **Git Audio** for new repositories.
 
 ### Enable
 
@@ -10,17 +15,15 @@ title: git-audio CLI
 git-audio global:set
 ```
 
-Enable `post-commit` hook for new repositories.
-
 ### Disable
 
 ```shell
 git-audio global:unset
 ```
 
-Disable initialisation of `post-commit` hook for new repositories.
-
 ## Repository-specific
+
+Install or uninstall the `post-commit` hook for the current repository.
 
 ### Install
 
@@ -28,15 +31,11 @@ Disable initialisation of `post-commit` hook for new repositories.
 git-audio repo:commit
 ```
 
-Install `post-commit` hook to current repository.
-
 ### Uninstall
 
 ```shell
 git-audio repo:reset
 ```
-
-Uninstall `post-commit` hook from current repository.
 
 ## Audio configuration
 
@@ -52,8 +51,8 @@ git-audio audio:reset
 
 ### Custom audio
 
+Sets a custom audio file. The path must be absolute.
+
 ```shell
 git-audio audio:set /path/to/audio
 ```
-
-Sets a custom audio file. The path must be absolute.

@@ -10,8 +10,8 @@ git clone https://github.com/dnhn/git-audio && cd git-audio && \
 make install
 ```
 
-This sets up the configuration directory in your home folder and installs the `git-audio` CLI to `/usr/local/bin`.
-You can now run `git-audio` from anywhere in your terminal.
+This sets up the configuration directory in your home folder and installs the `git-audio` CLI to `/usr/local/bin`,
+which requires `sudo` privileges. After installation, you can run `git-audio` from anywhere in your terminal.
 
 ## Configuration
 
@@ -28,8 +28,8 @@ Configuration is stored in `$HOME/.git-audio/`:
 
 ## Uninstallation
 
+This only removes the `git-audio` CLI. Configuration files and repository hooks remain in place.
+
 ```shell
 make uninstall
 ```
-
-This removes the `git-audio` CLI from your system. Configuration files and repository hooks remain intact.
