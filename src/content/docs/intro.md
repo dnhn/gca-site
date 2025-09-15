@@ -12,9 +12,9 @@ title: Introduction
 - Quick setup with [a single command](/install)!
 - Ease of use thanks to [simple CLI](/cli)
 
-## How this works
+## How Git Audio works
 
-This project installs a Git hook that plays an audio file every time you commit. It uses the [post-commit](https://git-scm.com/docs/githooks#_post_commit) hook, which is triggered after a commit is made.
+This tool installs a Git hook that plays an audio file every time you commit. It uses the [post-commit](https://git-scm.com/docs/githooks#_post_commit) hook, which is triggered after a commit is made.
 The audio is played using the system’s default audio player: `afplay` on macOS, `aplay` or `paplay` on Linux, with `ffplay` as a fallback option.
 
 ## Compatibility
