@@ -1,5 +1,6 @@
 ---
 title: Thanks
+tableOfContents: false
 ---
 
 - [Copilot](https://gh.io/copilot) from GitHub
