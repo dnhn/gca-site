@@ -9,7 +9,9 @@ export default defineConfig({
   integrations: [
     starlight({
       components: {
-        Footer: './src/components/footer.astro',
+        Footer: './src/components/starlight/footer.astro',
+        Pagination: './src/components/starlight/pagination.astro',
+        SkipLink: './src/components/starlight/skip-link.astro',
       },
       credits: true,
       customCss: ['./src/styles/global.css'],
