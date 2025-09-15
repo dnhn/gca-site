@@ -61,7 +61,11 @@
   }
 
   .sidebar-pane {
-    @apply bg-transparent border-0;
+    @apply border-0 min-[50rem]:bg-transparent;
+  }
+
+  .sidebar-content {
+    @apply min-[50rem]:py-12;
   }
 
   sl-sidebar-state-persist a {
@@ -70,6 +74,10 @@
 
   .right-sidebar {
     @apply border-0;
+  }
+
+  .right-sidebar-panel {
+    @apply py-12;
   }
 
   starlight-toc a {
