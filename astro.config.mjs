@@ -15,8 +15,8 @@ export default defineConfig({
       },
       credits: true,
       customCss: ['./src/styles/global.css'],
-      description: 'Add a spark of joy to coding—hear a surprise sound every time you commit.',
-      editLink: { baseUrl: 'https://github.com/dnhn/gca-site/edit/root' },
+      description: 'Add a spark of joy to coding: hear a surprise sound every time you commit.',
+      editLink: { baseUrl: 'https://github.com/dnhn/git-audio-docs/edit/root' },
       head: [{ tag: 'meta', attrs: { name: 'og:image', content: ogImage } }],
       lastUpdated: true,
       logo: {
