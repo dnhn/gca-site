@@ -8,14 +8,14 @@ title: Introduction
 
 - Cross-platform with various audio players supported:
   - `afplay`: macOS
-  - `aplay`, `paplay` or `ffplay`: Linux
+  - `aplay`, `paplay`,`ffplay`: Linux
 - Quick setup with [a single command](/install)!
 - Ease of use thanks to [simple CLI](/cli)
 
 ## How Git Audio works
 
 This tool installs a Git hook that plays an audio file every time you commit. It uses the [post-commit](https://git-scm.com/docs/githooks#_post_commit) hook, which is triggered after a commit is made.
-The audio is played using the system’s default audio player: `afplay` on macOS, `aplay` or `paplay` on Linux, with `ffplay` as a fallback option.
+The audio is played using the system’s default audio player: `afplay` on macOS, `aplay`, `paplay` and `ffplay` on Linux.
 
 ## Compatibility
 
